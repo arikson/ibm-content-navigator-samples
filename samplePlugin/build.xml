@@ -43,6 +43,7 @@
 				<include name="**/WebContent/**" />
 				<include name="**/data/**" />
 				<exclude name="**/.gitignore/**" />
+				<exclude name="**/.jazzignore/**" />
 			</fileset>
 		</copy>
 		<tstamp/>
@@ -86,6 +87,8 @@
             <fileset dir="src">
                 <include name="**/WebContent/**" />
                 <include name="**/data/**" />
+                <exclude name="**/.gitignore/**" />
+                <exclude name="**/.jazzignore/**" />
             </fileset>
         </copy>
 
