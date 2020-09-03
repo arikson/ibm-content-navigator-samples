@@ -77,7 +77,11 @@ define([
             this._multiValueInputPane.setData(list);
             this._multiValueInputPane.setEditable(true);
             this._multiValueInputContainer.appendChild(this._multiValueInputPane.domNode);
-            this.connect(this._multiValueInputPane, "onValuesChanged", this._onFieldChange);
+//          this.connect(this._multiValueInputPane, "onValuesChanged", this._onFieldChange);
+	    this.connect(this._multiValueInputPane, "_onClickAdd", this._onFieldChange);
+	    this.connect(this._multiValueInputPane, "_onClickRemove", this._onFieldChange);
+
+
             this._multiValueInputPane.startup();
             this._multiValueInputPane.onShow();
         },
